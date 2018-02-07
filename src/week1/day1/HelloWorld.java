@@ -1,3 +1,5 @@
+package week1.day1;
+
 public class HelloWorld {
 
     public static void main(String[] args) {
@@ -5,17 +7,16 @@ public class HelloWorld {
         byte b = 3;             // 1 byte
         short s = 10;           // 2 byte
         int number = 5 + 10;    // 4 byte
-        long l = 2;             // 8 byte
+        long l = 2345345435345345345L;             // 8 byte
 
 
-        float f = 10.0f;
+        float f = 1000000000000000000.9f;
         double d = 10000000000000000000000.9;
 
-        char symbol = '\'';
+        char symbol = 'A';
 
         boolean bool = false;
         System.out.println("Boolean - " + !bool);
-
 
         double v2 = f / d;
         System.out.println("Float result - " + v2);
