@@ -4,7 +4,7 @@ public class Algorithms {
 
     public static void main(String[] args) {
         int[] arr1 = initArray(5, 0, 100);
-        int[] arr2 = cloneArray(arr1);
+        int[] arr2 = arrayCopy(arr1);
 
         showArray(arr1);
         showArray(arr2);
@@ -30,7 +30,7 @@ public class Algorithms {
         return true;
     }
 
-    private static int[] initArray(int length, int max, int min){
+    public static int[] initArray(int length, int max, int min){
         int[] arr = new int[length];
         for (int i = 0; i < arr.length; i++) {
             arr[i] = (int) (Math.random() * (max - min) + min);
@@ -38,14 +38,22 @@ public class Algorithms {
         return arr;
     }
 
-    private static void showArray(int[] arr){
+    public static int[] initArray(int length){
+        int[] arr = new int[length];
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = i;
+        }
+        return arr;
+    }
+
+    public static void showArray(int[] arr){
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + ", ");
         }
         System.out.println();
     }
 
-    private static int[] copyArray(int[] arr) {
+    public static int[] copyArray(int[] arr) {
         int[] result = new int[arr.length];
         for (int i = 0; i < arr.length; i++) {
             result[i] = arr[i];
@@ -53,8 +61,14 @@ public class Algorithms {
         return result;
     }
 
-    private static int[] cloneArray(int[] arr) {
+    public static int[] cloneArray(int[] arr) {
         return arr.clone();
+    }
+
+    public static int[] arrayCopy(int[] arr){
+        int[] dest = new int[arr.length];
+        System.arraycopy(arr, 0, dest, 0, arr.length);
+        return dest;
     }
 
 }
