@@ -48,6 +48,7 @@ public class ArrayWrapper {
      *
      */
     public boolean removeValue(int value) {
+        return false;
     }
 
     public int[] sort(){
