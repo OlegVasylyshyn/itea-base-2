@@ -19,6 +19,37 @@ public class ArrayWrapper {
         arr = tmp;
     }
 
+    /**
+     * Remove element on specific position.
+     *
+     * Steps
+     * 1) Create new array
+     * 2) Copy all elements before deleted one in new array
+     * 3) Copy all elements after deleted one in new array
+     * 4) Resign `arr` reference to new array
+     * 5) Result - new array without deleted element
+     *
+     * @param index - position of deleted element.
+     * @throws ArrayIndexOutOfBoundsException - if index less then 0 and more than array length.
+     *
+     */
+    public void remove(int index) {
+    }
+
+    /**
+     * Remove element on specific position.
+     *
+     * Steps
+     * 1) Use implemented search method (find index)
+     * 2) Use remove method above
+     *
+     * @param value - position of deleted element.
+     * @return true if was deleted. false - if wasn't
+     *
+     */
+    public boolean removeValue(int value) {
+    }
+
     public int[] sort(){
         return null;
     }
