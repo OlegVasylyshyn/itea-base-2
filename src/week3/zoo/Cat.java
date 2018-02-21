@@ -1,6 +1,6 @@
 package week3.zoo;
 
-public class Cat extends Animal {
+public class Cat extends Animal implements CatBehavior {
 
     private String color;
     public static int count;
@@ -36,6 +36,18 @@ public class Cat extends Animal {
 
     public void feed(){
         System.out.println("Cat feed");
+    }
+
+    public void meow() {
+        System.out.println("Meow");
+    }
+
+    public void jump() {
+        System.out.println("Jump");
+    }
+
+    public void eat() {
+        System.out.println("Eat");
     }
 
     public String toString(){

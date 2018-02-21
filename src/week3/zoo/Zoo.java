@@ -14,7 +14,6 @@ public class Zoo {
         System.out.println(cat.getName());
         System.out.println(cat.getColor());
 
-
         System.out.println("Amount of cats - " + Cat.count);
 
         // abstraction

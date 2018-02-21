@@ -1,6 +1,6 @@
 package week3.zoo;
 
-public class Animal {
+public abstract class Animal {
 
     private String type;
     private String name;
@@ -40,7 +40,6 @@ public class Animal {
         this.age = age;
     }
 
-    public void feed(){
-        System.out.println("Animal feed");
-    }
+    public abstract void feed();
+
 }
