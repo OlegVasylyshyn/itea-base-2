@@ -64,7 +64,7 @@ public class ArrayWrapper {
     }
 
     public int[] copy(){
-        return null;
+        return arr.clone();
     }
 
     public int[] revers(){

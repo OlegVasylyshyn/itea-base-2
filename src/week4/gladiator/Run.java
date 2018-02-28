@@ -1,12 +1,11 @@
-package week3.student;
+package week4.gladiator;
 
 public class Run {
 
     public static void main(String[] args) {
 
-        School.getInstance().run();
+        Arena.getInstance().start();
 
     }
 
 }
-
