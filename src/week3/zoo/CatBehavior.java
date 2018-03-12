@@ -7,3 +7,13 @@ public interface CatBehavior {
     void eat();
 
 }
+
+interface AnimalBehavior {
+
+    void meow();
+    void jump();
+    void eat();
+    void bark();
+    void bite();
+
+}

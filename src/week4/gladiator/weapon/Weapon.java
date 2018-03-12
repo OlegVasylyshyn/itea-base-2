@@ -1,4 +1,4 @@
-package week4.gladiator;
+package week4.gladiator.weapon;
 
 public interface Weapon {
     int bit();

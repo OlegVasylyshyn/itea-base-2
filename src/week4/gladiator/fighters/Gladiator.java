@@ -1,8 +1,10 @@
-package week4.gladiator;
+package week4.gladiator.fighters;
+
+import week4.gladiator.weapon.Weapon;
 
 public abstract class Gladiator {
 
-    private Weapon weapon;
+    protected Weapon weapon;
 
     public abstract int bit();
     public abstract void defence(int damage);
