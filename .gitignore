@@ -1,3 +1,7 @@
 .idea
 HelloWorld.iml
 out
+*.txt
+*.jpg
+*.png
+student.student
