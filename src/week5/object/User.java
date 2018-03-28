@@ -19,6 +19,10 @@ public class User implements Cloneable {
         this.address = new Address(user.address);
     }
 
+    public User(String name) {
+        this.name = name;
+    }
+
     public User(String name, String pass,
                 int age, String city,
                 String street) {
@@ -73,7 +77,6 @@ public class User implements Cloneable {
 
     @Override
     public int hashCode() {
-
         return Objects.hash(name, pass, age, address);
     }
 
