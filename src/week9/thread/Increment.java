@@ -9,14 +9,14 @@ public class Increment {
     private static int num = 0;
 //    private static AtomicInteger num = new AtomicInteger(0);
 
-    private static Lock lock = new ReentrantLock(false);
+    private static Lock lock = new ReentrantLock();
 
     public static void main(String[] args) throws InterruptedException {
 
         Thread thread1 = new Thread(new Runnable() {
             @Override
             public void run() {
-                for (int i = 0; i < 1_000_000; i++) {
+                for (int i = 0; i < 1_00_000_000; i++) {
                     increment();
                 }
             }
@@ -25,7 +25,7 @@ public class Increment {
         Thread thread2 = new Thread(new Runnable() {
             @Override
             public void run() {
-                for (int i = 0; i < 1_000_000; i++) {
+                for (int i = 0; i < 1_00_000_000; i++) {
                     increment();
                 }
             }
@@ -42,7 +42,7 @@ public class Increment {
         System.out.println("Total time - " + (endTime - startTime));
     }
 
-//    private static synchronized void increment(){
+//    private static void increment(){
 //        synchronized (Increment.class) {
 //            num++;
 //        }
@@ -61,7 +61,7 @@ public class Increment {
 //    }
 
     // Synchronize - 117_915_539
-    // Lock - 156_657_712
+    // Lock - 18_950_425_315
     // AtomicInteger - 91_843_457
 
 }
